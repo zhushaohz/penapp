@@ -273,6 +273,46 @@
                     <div class="subtitle">
                       敏感性分析
                     </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue3m"
+                        :rules="rules2"
+                        ref="formRef2"
+                        style="padding: 10px"
+                      >
+                        <n-form-item label="节点" path="value1">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue3m.value1"
+                            :options="options32"
+                            @update:value="handleUpdateValue32"
+                            style="width: 11rem"
+                          />
+                        </n-form-item>
+                        <n-form-item label="相关节点" path="value2">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue3m.value2"
+                            :options="options33"
+                            @update:value="handleUpdateValue32"
+                          />
+                        </n-form-item>
+                        <n-form-item label="敏感度(%)">
+                          <n-input
+                            readonly="true"
+                            placeholder=""
+                            v-model:value="sensitivity3"
+                            autosize="true"
+                            style="min-width: 90px"
+                          >
+                          </n-input>
+                        </n-form-item>
+                      </n-form>
+
+                    </div>
                     <div class="subtitle">
                       情景分析
                     </div>
@@ -327,6 +367,46 @@
                     </div>
                     <div class="subtitle">
                       敏感性分析
+                    </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue4m"
+                        :rules="rules2"
+                        ref="formRef2"
+                        style="padding: 10px"
+                      >
+                        <n-form-item label="节点" path="value1">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue4m.value1"
+                            :options="options42"
+                            @update:value="handleUpdateValue42"
+                            style="width: 11rem"
+                          />
+                        </n-form-item>
+                        <n-form-item label="相关节点" path="value2">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue4m.value2"
+                            :options="options43"
+                            @update:value="handleUpdateValue42"
+                          />
+                        </n-form-item>
+                        <n-form-item label="敏感度(%)">
+                          <n-input
+                            readonly="true"
+                            placeholder=""
+                            v-model:value="sensitivity4"
+                            autosize="true"
+                            style="min-width: 90px"
+                          >
+                          </n-input>
+                        </n-form-item>
+                      </n-form>
+
                     </div>
                     <div class="subtitle">
                       情景分析
@@ -383,6 +463,46 @@
                     <div class="subtitle">
                       敏感性分析
                     </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue5m"
+                        :rules="rules2"
+                        ref="formRef2"
+                        style="padding: 10px"
+                      >
+                        <n-form-item label="节点" path="value1">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue5m.value1"
+                            :options="options52"
+                            @update:value="handleUpdateValue52"
+                            style="width: 11rem"
+                          />
+                        </n-form-item>
+                        <n-form-item label="相关节点" path="value2">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue5m.value2"
+                            :options="options53"
+                            @update:value="handleUpdateValue52"
+                          />
+                        </n-form-item>
+                        <n-form-item label="敏感度(%)">
+                          <n-input
+                            readonly="true"
+                            placeholder=""
+                            v-model:value="sensitivity5"
+                            autosize="true"
+                            style="min-width: 90px"
+                          >
+                          </n-input>
+                        </n-form-item>
+                      </n-form>
+
+                    </div>
                     <div class="subtitle">
                       情景分析
                     </div>
@@ -433,6 +553,18 @@ const formValue2m = ref( {
   value1: null,
   value2: null
 })
+const formValue3m = ref( {
+  value1: null,
+  value2: null
+})
+const formValue4m = ref( {
+  value1: null,
+  value2: null
+})
+const formValue5m = ref( {
+  value1: null,
+  value2: null
+})
 const result = ref(null)
 const probability1 = ref( null)
 const probability2 = ref( null)
@@ -441,6 +573,9 @@ const probability4 = ref( null)
 const probability5 = ref( null)
 const sensitivity1 = ref( null)
 const sensitivity2 = ref( null)
+const sensitivity3 = ref( null)
+const sensitivity4 = ref( null)
+const sensitivity5 = ref( null)
 const handleUpdateValue1 = async () => {
   formRef.value.validate((errors) => {
     if (!errors) {
@@ -715,45 +850,253 @@ const handleUpdateValue22 = async () => {
       switch (result.value) {
         case '2wuB':sensitivity2.value = '100';
           break;
-        case '2wuB1':sensitivity2.value = '8.08';
+        case '2wuB1':sensitivity2.value = '7.18';
           break;
-        case '1renA2':sensitivity1.value = '2.76';
+        case '2wuB2':sensitivity2.value = '6.13';
           break;
-        case '1renA11':sensitivity1.value = '0.692';
+        case '2wuB3':sensitivity2.value = '3.58';
           break;
-        case '1renA12':sensitivity1.value = '0.537';
+        case '2wuB21':sensitivity2.value = '0.703';
           break;
-        case '1renA22':sensitivity1.value = '0.208';
+        case '2wuB12':sensitivity2.value = '0.637';
           break;
-        case '1rena4':sensitivity1.value = '0.0557';
+        case '2wuB22':sensitivity2.value = '0.38';
           break;
-        case '1rena3':sensitivity1.value = '0.0452';
+        case '2wuB31':sensitivity2.value = '0.372';
           break;
-        case '1rena2':sensitivity1.value = '0.0398';
+        case '2wuB32':sensitivity2.value = '0.251';
           break;
-        case '1rena5':sensitivity1.value = '0.0395';
+        case '2wub4':sensitivity2.value = '0.0938';
           break;
-        case '1rena52':sensitivity1.value = '0.006';
+        case '2wub6':sensitivity2.value = '0.0656';
           break;
-        case '1rena42':sensitivity1.value = '0.00503';
+        case '2wub3':sensitivity2.value = '0.0499';
           break;
-        case '1rena51':sensitivity1.value = '0.00471';
+        case '2wub1':sensitivity2.value = '0.0373';
           break;
-        case '1renA21':sensitivity1.value = '0.00305';
+        case '2wub41':sensitivity2.value = '0.00877';
           break;
-        case '1rena41':sensitivity1.value = '0.00141';
+        case '2wub42':sensitivity2.value = '0.00563';
           break;
-        case '1rena1':sensitivity1.value = '0.00114';
+        case '2wub2':sensitivity2.value = '0.000777';
           break;
-        case '1rena6':sensitivity1.value = '0.000202';
+        case '2wuB11':sensitivity2.value = '0.000698';
           break;
-        case '1rena7':sensitivity1.value = '0.000164';
+        case '2wub7':sensitivity2.value = '0.000545';
           break;
-        case '1rena31':sensitivity1.value = '0.0000968';
+        case '2wub13':sensitivity2.value = '0.00011';
           break;
-        case '1rena32':sensitivity1.value = '0.0000787';
+        case '2wub9':sensitivity2.value = '0.0000988';
           break;
-        default:sensitivity1.value = '';
+        case '2wub11':sensitivity2.value = '0.0000903';
+          break;
+        case '2wub61':sensitivity2.value = '0.0000793';
+          break;
+        case '2wub63':sensitivity2.value = '0.0000720';
+          break;
+        case '2wub5':sensitivity2.value = '0.0000641';
+          break;
+        case '2wub32':sensitivity2.value = '0.0000497';
+          break;
+        case '2wub8':sensitivity2.value = '0.0000262';
+          break;
+        case '2wuE3':sensitivity2.value = '0.0000229';
+          break;
+        case '2wuE4':sensitivity2.value = '0.0000218';
+          break;
+        case '2wub62':sensitivity2.value = '0.0000196';
+          break;
+        case '2wub12':sensitivity2.value = '0.0000163';
+          break;
+        case '2wub31':sensitivity2.value = '0.0000153';
+          break;
+        case '2wuE2':sensitivity2.value = '0';
+          break;
+        case '2wuE1':sensitivity2.value = '0';
+          break;
+        case '2wub10':sensitivity2.value = '0';
+          break;
+        case '2wuE5':sensitivity2.value = '0';
+          break;
+        default:sensitivity2.value = '';
+      }
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+}
+const handleUpdateValue32 = async () => {
+  formRef2.value.validate((errors) => {
+    if (!errors) {
+      const { value1, value2} = formValue3m
+      //message.success('分析成功')
+      result.value = value.value + formValue3m.value.value1 + formValue3m.value.value2
+      console.log(result)
+      switch (result.value) {
+        case '3sD2':sensitivity3.value = '8.08';
+          break;
+        case '3sD3':sensitivity3.value = '5.87';
+          break;
+        case '3sD1':sensitivity3.value = '2.7';
+          break;
+        case '3sD21':sensitivity3.value = '1.3';
+          break;
+        case '3sD32':sensitivity3.value = '0.938';
+          break;
+        case '3sD23':sensitivity3.value = '0.527';
+          break;
+        case '3sD22':sensitivity3.value = '0.264';
+          break;
+        case '3sd5':sensitivity3.value = '0.149';
+          break;
+        case '3sd1':sensitivity3.value = '0.044';
+          break
+        case '3sd3':sensitivity3.value = '0.0234';
+          break;
+        case '3sD13':sensitivity3.value = '0.00891';
+          break;
+        case '3sD11':sensitivity3.value = '0.00517';
+          break;
+        case '3sD31':sensitivity3.value = '0.00374';
+          break;
+        case '3sD12':sensitivity3.value = '0.00157';
+          break;
+        case '3sd7':sensitivity3.value = '0.00115';
+          break;
+        case '3sd6':sensitivity3.value = '0.000402';
+          break;
+        case '3sd8':sensitivity3.value = '0.000204';
+          break;
+        case '3sd4':sensitivity3.value = '0.000185';
+          break;
+        case '3sd2':sensitivity3.value = '0.000164';
+          break;
+        case '3sd13':sensitivity3.value = '0.000143';
+          break;
+        case '3sd52':sensitivity3.value = '0.00013';
+          break;
+        case '3sd11':sensitivity3.value = '0.000129';
+          break;
+        case '3sd51':sensitivity3.value = '0.000086';
+          break;
+        case '3sd31':sensitivity3.value = '0.0000666';
+          break;
+        case '3sd12':sensitivity3.value = '0.0000336';
+          break;
+        case '3sd32':sensitivity3.value = '0.0000231';
+          break;
+        case '3sd33':sensitivity3.value = '0.0000204';
+          break;
+        default:sensitivity3.value = '';
+      }
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+}
+const handleUpdateValue42 = async () => {
+  formRef2.value.validate((errors) => {
+    if (!errors) {
+      const { value1, value2} = formValue4m
+      //message.success('分析成功')
+      result.value = value.value + formValue4m.value.value1 + formValue4m.value.value2
+      console.log(result)
+      switch (result.value) {
+        case '4qiE1':sensitivity4.value = '8.74';
+          break;
+        case '4qiE2':sensitivity4.value = '5.36';
+          break;
+        case '4qiE11':sensitivity4.value = '2.01';
+          break;
+        case '4qiE22':sensitivity4.value = '0.529';
+          break;
+        case '4qiE21':sensitivity4.value = '0.368';
+          break;
+        case '4qie5':sensitivity4.value = '0.0421';
+          break;
+        case '4qie6':sensitivity4.value = '0.0396';
+          break;
+        case '4qie51':sensitivity4.value = '0.00676';
+          break;
+        case '4qie2':sensitivity4.value = '0.0022';
+          break;
+        case '4qiE12':sensitivity4.value = '0.000885';
+          break;
+        case '4qie1':sensitivity4.value = '0.00081';
+          break;
+        case '4qie3':sensitivity4.value = '0.000136';
+          break;
+        case '4qie62':sensitivity4.value = '0.000112';
+          break;
+        case '4qie4':sensitivity4.value = '0.0000269';
+          break;
+        case '4qie52':sensitivity4.value = '0.0000215';
+          break;
+        case '4qiF2':sensitivity4.value = '0';
+          break;
+        case '4qiF1':sensitivity4.value = '0';
+          break;
+        case '4qie61':sensitivity4.value = '0';
+          break;
+        default:sensitivity4.value = '';
+      }
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+}
+const handleUpdateValue52 = async () => {
+  formRef2.value.validate((errors) => {
+    if (!errors) {
+      const { value1, value2} = formValue5m
+      //message.success('分析成功')
+      result.value = value.value + formValue5m.value.value1 + formValue5m.value.value2
+      console.log(result)
+      switch (result.value) {
+        case '5guC1':sensitivity5.value = '11.6';
+          break;
+        case '5guC2':sensitivity5.value = '7.74';
+          break;
+        case '5guC11':sensitivity5.value = '1';
+          break;
+        case '5guC23':sensitivity5.value = '0.629';
+          break;
+        case '5guC21':sensitivity5.value = '0.611';
+          break;
+        case '5guC22':sensitivity5.value = '0.232';
+          break;
+        case '5guc7':sensitivity5.value = '0.0718';
+          break;
+        case '5guc5':sensitivity5.value = '0.027';
+          break;
+        case '5guC12':sensitivity5.value = '0.00953';
+          break;
+        case '5guc2':sensitivity5.value = '0.00406';
+          break;
+        case '5guc3':sensitivity5.value = '0.00154';
+          break;
+        case '5guc4':sensitivity5.value = '0.000747';
+          break;
+        case '5guc8':sensitivity5.value = '0.000631';
+          break;
+        case '5guc1':sensitivity5.value = '0.000458';
+          break;
+        case '5guc72':sensitivity5.value = '0.0000499';
+          break;
+        case '5guc71':sensitivity5.value = '0.0000438';
+          break;
+        case '5guc52':sensitivity5.value = '0.0000258';
+          break;
+        case '5guc6':sensitivity5.value = '0.0000232';
+          break;
+        case '5guc51':sensitivity5.value = '0';
+          break;
+        case '5guc53':sensitivity5.value = '0';
+          break;
+        default:sensitivity2.value = '';
       }
     } else {
       console.log(errors)
@@ -1336,6 +1679,291 @@ const options23 = [
     value: 'E5'
   },
 ]
+const options32 = [
+  {
+    label: '水流途径泄漏',
+    value: 's'
+  },
+]
+const options33 = [
+  {
+    label: '污水进行了消毒灭菌，但不彻底',
+    value: 'D2'
+  },
+  {
+    label: '未经消毒灭菌处理即排放',
+    value: 'D3'
+  },
+  {
+    label: '污水在消毒灭菌前泄漏',
+    value: 'D1'
+  },
+  {
+    label: '污水消毒灭菌方法不正确',
+    value: 'D21'
+  },
+  {
+    label: '正常不需要处理但被污染',
+    value: 'D32'
+  },
+  {
+    label: '污水消毒灭菌过程未完成',
+    value: 'D23'
+  },
+  {
+    label: '污水处理系统性能不达标',
+    value: 'D22'
+  },
+  {
+    label: '使用中设备故障',
+    value: 'd5'
+  },
+  {
+    label: '消毒剂问题',
+    value: 'd1'
+  },
+  {
+    label: '合格验证存在问题',
+    value: 'd3'
+  },
+  {
+    label: '连接部位渗漏',
+    value: 'D13'
+  },
+  {
+    label: '管道破裂、泄漏',
+    value: 'D11'
+  },
+  {
+    label: '正常需要处理但未执行',
+    value: 'D31'
+  },
+  {
+    label: '罐体破裂、泄漏',
+    value: 'D12'
+  },
+  {
+    label: '意外事件导致水污染',
+    value: 'd7'
+  },
+  {
+    label: '不正确操作',
+    value: 'd6'
+  },
+  {
+    label: '风险评估未识别出水污染需处理',
+    value: 'd8'
+  },
+  {
+    label: '验证合格，实际消毒灭菌效果不合格',
+    value: 'd4'
+  },
+  {
+    label: '选择不合适的消毒设备/运行参数',
+    value: 'd2'
+  },
+  {
+    label: '使用不当（剂量、时间等）',
+    value: 'd13'
+  },
+  {
+    label: '正常维护条件下的偶发性故障',
+    value: 'd52'
+  },
+  {
+    label: '方法不当（种类、浓度、时间）',
+    value: 'd11'
+  },
+  {
+    label: '未定期维护',
+    value: 'd51'
+  },
+  {
+    label: '未进行验证',
+    value: 'd31'
+  },
+  {
+    label: '性能不当（过期、失效、不合格）',
+    value: 'd12'
+  },
+  {
+    label: '验证已过期',
+    value: 'd32'
+  },
+  {
+    label: '验证结果不可靠',
+    value: 'd33'
+  },
+]
+const options42 = [
+  {
+    label: '气流途径泄漏',
+    value: 'qi'
+  },
+]
+const options43 = [
+  {
+    label: '排风/排气系统泄漏',
+    value: 'E1'
+  },
+  {
+    label: '围护结构泄漏',
+    value: 'E2'
+  },
+  {
+    label: '排风/排气HEPA泄漏',
+    value: 'E11'
+  },
+  {
+    label: '围护结构未破坏但出现泄漏',
+    value: 'E22'
+  },
+  {
+    label: '围护结构遭受物理性破坏',
+    value: 'E21'
+  },
+  {
+    label: '防护失效',
+    value: 'e5'
+  },
+  {
+    label: '压力梯度丧失',
+    value: 'e6'
+  },
+  {
+    label: '气密性房间物理密封措施失效',
+    value: 'e51'
+  },
+  {
+    label: 'HEPA安装问题导致周边泄漏',
+    value: 'e2'
+  },
+  {
+    label: '与滤器不相关的其他泄漏',
+    value: 'E12'
+  },
+  {
+    label: 'HEPA本身泄漏',
+    value: 'e1'
+  },
+  {
+    label: '自然破坏',
+    value: 'e3'
+  },
+  {
+    label: '排风系统及自控系统故障',
+    value: 'e62'
+  },
+  {
+    label: '人为破坏',
+    value: 'e4'
+  },
+  {
+    label: '无气密性要求房间发生泄漏',
+    value: 'e52'
+  },
+  {
+    label: '穿墙设备及等管道丧失气密性',
+    value: 'F2'
+  },
+  {
+    label: '墙体密封失效',
+    value: 'F1'
+  },
+  {
+    label: '主备电源电力故障',
+    value: 'e61'
+  },
+]
+const options52 = [
+  {
+    label: '固态废弃物途径泄漏',
+    value: 'gu'
+  },
+]
+const options53 = [
+  {
+    label: '未进行消毒灭菌处理',
+    value: 'C1'
+  },
+  {
+    label: '已进行消毒灭菌处理，但不彻底',
+    value: 'C2'
+  },
+  {
+    label: '人为失误携出',
+    value: 'C11'
+  },
+  {
+    label: '消毒灭菌过程未完成',
+    value: 'C23'
+  },
+  {
+    label: '消毒灭菌方法不正确',
+    value: 'C21'
+  },
+  {
+    label: '消毒灭菌设备性能不达标',
+    value: 'C22'
+  },
+  {
+    label: '使用中设备故障',
+    value: 'c7'
+  },
+  {
+    label: '合格验证存在问题',
+    value: 'c5'
+  },{
+    label: '故意携出',
+    value: 'C12'
+  },
+  {
+    label: '拿错',
+    value: 'c2'
+  },
+  {
+    label: '消毒剂问题',
+    value: 'c3'
+  },
+  {
+    label: '选择不合适的消毒设备/运行参数',
+    value: 'c4'
+  },
+  {
+    label: '不正确操作',
+    value: 'c8'
+  },
+  {
+    label: '风险评估失误，未要求消毒灭菌',
+    value: 'c1'
+  },
+  {
+    label: '正常维护条件下的偶发性故障',
+    value: 'c72'
+  },
+  {
+    label: '未定期维护',
+    value: 'c71'
+  },
+  {
+    label: '验证已过期',
+    value: 'c52'
+  },
+  {
+    label: '验证合格，实际消毒灭菌效果不合格',
+    value: 'c6'
+  },
+  {
+    label: '未进行验证',
+    value: 'c51'
+  },
+  {
+    label: '验证结果不可靠',
+    value: 'c53'
+  },
+
+]
+
 const yorns = [
   {
     value: "y",
