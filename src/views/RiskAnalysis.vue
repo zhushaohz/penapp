@@ -124,6 +124,111 @@
                     <div class="subtitle">
                       情景分析
                     </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue1q"
+                        :rules="rules3"
+                        ref="formRef3"
+                        style="padding: 10px"
+                      >
+                        <n-form-item label="节点" path="value1">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue1q.value1"
+                            :options="options14"
+                            @update:value="handleUpdateValue13"
+                          />
+                        </n-form-item>
+                        <n-form-item label="状态" path="value2">
+                          <n-radio-group v-model:value="formValue1q.value2" name="radiogroup" @update:value="handleUpdateValue13">
+                            <n-radio-button
+                              v-for="yorn in yorns"
+                              :key="yorn.value"
+                              :value="yorn.value"
+                            >
+                              {{ yorn.label }}
+                            </n-radio-button>
+                          </n-radio-group>
+                        </n-form-item>
+                        <n-form-item label="顶事件概率(%)">
+                          <n-input
+                            readonly="true"
+                            placeholder=""
+                            v-model:value="probability13"
+                            autosize="true"
+                            style="min-width: 90px"
+                          >
+                          </n-input>
+                        </n-form-item>
+                      </n-form>
+
+                    </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue1q"
+                        :rules="rules3"
+                        :show-label="false"
+                        ref="formRef4"
+                        style="padding: 10px"
+                      >
+                        <n-form-item  path="value3">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue1q.value3"
+                            :options="options15"
+                            @update:value="handleUpdateValue13"
+                          />
+                        </n-form-item>
+                        <n-form-item  path="value4">
+                          <n-radio-group v-model:value="formValue1q.value4" name="radiogroup" @update:value="handleUpdateValue13">
+                            <n-radio-button
+                              v-for="yorn in yorns"
+                              :key="yorn.value"
+                              :value="yorn.value"
+                            >
+                              {{ yorn.label }}
+                            </n-radio-button>
+                          </n-radio-group>
+                        </n-form-item>
+                      </n-form>
+
+                    </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue1q"
+                        :rules="rules3"
+                        :show-label="false"
+                        ref="formRef5"
+                        style="padding: 10px"
+                      >
+                        <n-form-item path="value5">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue1q.value5"
+                            :options="options16"
+                            @update:value="handleUpdateValue13"
+                          />
+                        </n-form-item>
+                        <n-form-item path="value6">
+                          <n-radio-group v-model:value="formValue1q.value6" name="radiogroup" @update:value="handleUpdateValue13">
+                            <n-radio-button
+                              v-for="yorn in yorns"
+                              :key="yorn.value"
+                              :value="yorn.value"
+                            >
+                              {{ yorn.label }}
+                            </n-radio-button>
+                          </n-radio-group>
+                        </n-form-item>
+                      </n-form>
+
+                    </div>
                   </t-col>
                 </t-row>
               </t-tab-panel>
@@ -221,6 +326,111 @@
                     <div class="subtitle">
                       情景分析
                     </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue2q"
+                        :rules="rules3"
+                        ref="formRef3"
+                        style="padding: 10px"
+                      >
+                        <n-form-item label="节点" path="value1">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue2q.value1"
+                            :options="options24"
+                            @update:value="handleUpdateValue23"
+                          />
+                        </n-form-item>
+                        <n-form-item label="状态" path="value2">
+                          <n-radio-group v-model:value="formValue2q.value2" name="radiogroup" @update:value="handleUpdateValue23">
+                            <n-radio-button
+                              v-for="yorn in yorns"
+                              :key="yorn.value"
+                              :value="yorn.value"
+                            >
+                              {{ yorn.label }}
+                            </n-radio-button>
+                          </n-radio-group>
+                        </n-form-item>
+                        <n-form-item label="顶事件概率(%)">
+                          <n-input
+                            readonly="true"
+                            placeholder=""
+                            v-model:value="probability23"
+                            autosize="true"
+                            style="min-width: 90px"
+                          >
+                          </n-input>
+                        </n-form-item>
+                      </n-form>
+
+                    </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue2q"
+                        :rules="rules3"
+                        :show-label="false"
+                        ref="formRef4"
+                        style="padding: 10px"
+                      >
+                        <n-form-item  path="value3">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue2q.value3"
+                            :options="options25"
+                            @update:value="handleUpdateValue23"
+                          />
+                        </n-form-item>
+                        <n-form-item  path="value4">
+                          <n-radio-group v-model:value="formValue2q.value4" name="radiogroup" @update:value="handleUpdateValue23">
+                            <n-radio-button
+                              v-for="yorn in yorns"
+                              :key="yorn.value"
+                              :value="yorn.value"
+                            >
+                              {{ yorn.label }}
+                            </n-radio-button>
+                          </n-radio-group>
+                        </n-form-item>
+                      </n-form>
+
+                    </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue2q"
+                        :rules="rules3"
+                        :show-label="false"
+                        ref="formRef5"
+                        style="padding: 10px"
+                      >
+                        <n-form-item path="value5">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue2q.value5"
+                            :options="options26"
+                            @update:value="handleUpdateValue13"
+                          />
+                        </n-form-item>
+                        <n-form-item path="value6">
+                          <n-radio-group v-model:value="formValue2q.value6" name="radiogroup" @update:value="handleUpdateValue23">
+                            <n-radio-button
+                              v-for="yorn in yorns"
+                              :key="yorn.value"
+                              :value="yorn.value"
+                            >
+                              {{ yorn.label }}
+                            </n-radio-button>
+                          </n-radio-group>
+                        </n-form-item>
+                      </n-form>
+
+                    </div>
                   </t-col>
                 </t-row>
               </t-tab-panel>
@@ -315,6 +525,111 @@
                     </div>
                     <div class="subtitle">
                       情景分析
+                    </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue3q"
+                        :rules="rules3"
+                        ref="formRef3"
+                        style="padding: 10px"
+                      >
+                        <n-form-item label="节点" path="value1">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue3q.value1"
+                            :options="options34"
+                            @update:value="handleUpdateValue33"
+                          />
+                        </n-form-item>
+                        <n-form-item label="状态" path="value2">
+                          <n-radio-group v-model:value="formValue3q.value2" name="radiogroup" @update:value="handleUpdateValue33">
+                            <n-radio-button
+                              v-for="yorn in yorns"
+                              :key="yorn.value"
+                              :value="yorn.value"
+                            >
+                              {{ yorn.label }}
+                            </n-radio-button>
+                          </n-radio-group>
+                        </n-form-item>
+                        <n-form-item label="顶事件概率(%)">
+                          <n-input
+                            readonly="true"
+                            placeholder=""
+                            v-model:value="probability33"
+                            autosize="true"
+                            style="min-width: 90px"
+                          >
+                          </n-input>
+                        </n-form-item>
+                      </n-form>
+
+                    </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue3q"
+                        :rules="rules3"
+                        :show-label="false"
+                        ref="formRef4"
+                        style="padding: 10px"
+                      >
+                        <n-form-item  path="value3">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue3q.value3"
+                            :options="options35"
+                            @update:value="handleUpdateValue33"
+                          />
+                        </n-form-item>
+                        <n-form-item  path="value4">
+                          <n-radio-group v-model:value="formValue3q.value4" name="radiogroup" @update:value="handleUpdateValue33">
+                            <n-radio-button
+                              v-for="yorn in yorns"
+                              :key="yorn.value"
+                              :value="yorn.value"
+                            >
+                              {{ yorn.label }}
+                            </n-radio-button>
+                          </n-radio-group>
+                        </n-form-item>
+                      </n-form>
+
+                    </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue3q"
+                        :rules="rules3"
+                        :show-label="false"
+                        ref="formRef5"
+                        style="padding: 10px"
+                      >
+                        <n-form-item path="value5">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue3q.value5"
+                            :options="options36"
+                            @update:value="handleUpdateValue33"
+                          />
+                        </n-form-item>
+                        <n-form-item path="value6">
+                          <n-radio-group v-model:value="formValue3q.value6" name="radiogroup" @update:value="handleUpdateValue33">
+                            <n-radio-button
+                              v-for="yorn in yorns"
+                              :key="yorn.value"
+                              :value="yorn.value"
+                            >
+                              {{ yorn.label }}
+                            </n-radio-button>
+                          </n-radio-group>
+                        </n-form-item>
+                      </n-form>
+
                     </div>
                   </t-col>
                 </t-row>
@@ -411,6 +726,111 @@
                     <div class="subtitle">
                       情景分析
                     </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue4q"
+                        :rules="rules3"
+                        ref="formRef3"
+                        style="padding: 10px"
+                      >
+                        <n-form-item label="节点" path="value1">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue4q.value1"
+                            :options="options44"
+                            @update:value="handleUpdateValue43"
+                          />
+                        </n-form-item>
+                        <n-form-item label="状态" path="value2">
+                          <n-radio-group v-model:value="formValue4q.value2" name="radiogroup" @update:value="handleUpdateValue43">
+                            <n-radio-button
+                              v-for="yorn in yorns"
+                              :key="yorn.value"
+                              :value="yorn.value"
+                            >
+                              {{ yorn.label }}
+                            </n-radio-button>
+                          </n-radio-group>
+                        </n-form-item>
+                        <n-form-item label="顶事件概率(%)">
+                          <n-input
+                            readonly="true"
+                            placeholder=""
+                            v-model:value="probability43"
+                            autosize="true"
+                            style="min-width: 90px"
+                          >
+                          </n-input>
+                        </n-form-item>
+                      </n-form>
+
+                    </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue4q"
+                        :rules="rules3"
+                        :show-label="false"
+                        ref="formRef4"
+                        style="padding: 10px"
+                      >
+                        <n-form-item  path="value3">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue4q.value3"
+                            :options="options45"
+                            @update:value="handleUpdateValue43"
+                          />
+                        </n-form-item>
+                        <n-form-item  path="value4">
+                          <n-radio-group v-model:value="formValue4q.value4" name="radiogroup" @update:value="handleUpdateValue43">
+                            <n-radio-button
+                              v-for="yorn in yorns"
+                              :key="yorn.value"
+                              :value="yorn.value"
+                            >
+                              {{ yorn.label }}
+                            </n-radio-button>
+                          </n-radio-group>
+                        </n-form-item>
+                      </n-form>
+
+                    </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue4q"
+                        :rules="rules3"
+                        :show-label="false"
+                        ref="formRef5"
+                        style="padding: 10px"
+                      >
+                        <n-form-item path="value5">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue4q.value5"
+                            :options="options46"
+                            @update:value="handleUpdateValue43"
+                          />
+                        </n-form-item>
+                        <n-form-item path="value6">
+                          <n-radio-group v-model:value="formValue4q.value6" name="radiogroup" @update:value="handleUpdateValue43">
+                            <n-radio-button
+                              v-for="yorn in yorns"
+                              :key="yorn.value"
+                              :value="yorn.value"
+                            >
+                              {{ yorn.label }}
+                            </n-radio-button>
+                          </n-radio-group>
+                        </n-form-item>
+                      </n-form>
+
+                    </div>
                   </t-col>
                 </t-row>
               </t-tab-panel>
@@ -506,6 +926,111 @@
                     <div class="subtitle">
                       情景分析
                     </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue5q"
+                        :rules="rules3"
+                        ref="formRef3"
+                        style="padding: 10px"
+                      >
+                        <n-form-item label="节点" path="value1">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue5q.value1"
+                            :options="options54"
+                            @update:value="handleUpdateValue53"
+                          />
+                        </n-form-item>
+                        <n-form-item label="状态" path="value2">
+                          <n-radio-group v-model:value="formValue5q.value2" name="radiogroup" @update:value="handleUpdateValue53">
+                            <n-radio-button
+                              v-for="yorn in yorns"
+                              :key="yorn.value"
+                              :value="yorn.value"
+                            >
+                              {{ yorn.label }}
+                            </n-radio-button>
+                          </n-radio-group>
+                        </n-form-item>
+                        <n-form-item label="顶事件概率(%)">
+                          <n-input
+                            readonly="true"
+                            placeholder=""
+                            v-model:value="probability53"
+                            autosize="true"
+                            style="min-width: 90px"
+                          >
+                          </n-input>
+                        </n-form-item>
+                      </n-form>
+
+                    </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue5q"
+                        :rules="rules3"
+                        :show-label="false"
+                        ref="formRef4"
+                        style="padding: 10px"
+                      >
+                        <n-form-item  path="value3">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue5q.value3"
+                            :options="options55"
+                            @update:value="handleUpdateValue53"
+                          />
+                        </n-form-item>
+                        <n-form-item  path="value4">
+                          <n-radio-group v-model:value="formValue5q.value4" name="radiogroup" @update:value="handleUpdateValue53">
+                            <n-radio-button
+                              v-for="yorn in yorns"
+                              :key="yorn.value"
+                              :value="yorn.value"
+                            >
+                              {{ yorn.label }}
+                            </n-radio-button>
+                          </n-radio-group>
+                        </n-form-item>
+                      </n-form>
+
+                    </div>
+                    <div>
+                      <n-form
+                        inline
+                        :model="formValue5q"
+                        :rules="rules3"
+                        :show-label="false"
+                        ref="formRef5"
+                        style="padding: 10px"
+                      >
+                        <n-form-item path="value5">
+                          <n-select
+                            class="selectitem"
+                            placeholder="请选择"
+                            v-model:value="formValue5q.value5"
+                            :options="options56"
+                            @update:value="handleUpdateValue53"
+                          />
+                        </n-form-item>
+                        <n-form-item path="value6">
+                          <n-radio-group v-model:value="formValue5q.value6" name="radiogroup" @update:value="handleUpdateValue53">
+                            <n-radio-button
+                              v-for="yorn in yorns"
+                              :key="yorn.value"
+                              :value="yorn.value"
+                            >
+                              {{ yorn.label }}
+                            </n-radio-button>
+                          </n-radio-group>
+                        </n-form-item>
+                      </n-form>
+
+                    </div>
                   </t-col>
                 </t-row>
               </t-tab-panel>
@@ -525,6 +1050,10 @@ const value = ref(1);
 const formRef = ref( null)
 
 const formRef2 = ref( null)
+const formRef3 = ref( null)
+const formRef4 = ref( null)
+const formRef5 = ref( null)
+
 const formValue1g = ref( {
   value1: null,
   value2: null
@@ -565,6 +1094,49 @@ const formValue5m = ref( {
   value1: null,
   value2: null
 })
+const formValue1q = ref( {
+  value1: null,
+  value2: null,
+  value3: null,
+  value4: null,
+  value5: null,
+  value6: null,
+})
+const formValue2q = ref( {
+  value1: null,
+  value2: null,
+  value3: null,
+  value4: null,
+  value5: null,
+  value6: null,
+})
+const formValue3q = ref( {
+  value1: null,
+  value2: null,
+  value3: null,
+  value4: null,
+  value5: null,
+  value6: null,
+})
+const formValue4q = ref( {
+  value1: null,
+  value2: null,
+  value3: null,
+  value4: null,
+  value5: null,
+  value6: null,
+})
+const formValue5q = ref( {
+  value1: null,
+  value2: null,
+  value3: null,
+  value4: null,
+  value5: null,
+  value6: null,
+})
+
+
+
 const result = ref(null)
 const probability1 = ref( null)
 const probability2 = ref( null)
@@ -576,6 +1148,11 @@ const sensitivity2 = ref( null)
 const sensitivity3 = ref( null)
 const sensitivity4 = ref( null)
 const sensitivity5 = ref( null)
+const probability13 = ref( null)
+const probability23 = ref( null)
+const probability33 = ref( null)
+const probability43 = ref( null)
+const probability53 = ref( null)
 const handleUpdateValue1 = async () => {
   formRef.value.validate((errors) => {
     if (!errors) {
@@ -1104,6 +1681,236 @@ const handleUpdateValue52 = async () => {
     }
   })
 }
+const handleUpdateValue13 = async () => {
+  formRef3.value.validate((errors) => {
+    if (!errors) {
+      result.value = value.value + formValue1q.value.value1 + formValue1q.value.value2 + formValue1q.value.value3 + formValue1q.value.value4 +formValue1q.value.value5 + formValue1q.value.value6
+      console.log(result.value)
+      switch (result.value) {
+        case '11y2y3y':probability13.value = '26.4';
+          break;
+        case '11y2y3n':probability13.value = '26.1';
+          break;
+        case '11y2n3y':probability13.value = '25';
+          break;
+        case '11n2y3y':probability13.value = '25.4';
+          break;
+        case '11y2n3n':probability13.value = '24.5';
+          break;
+        case '11n2n3y':probability13.value = '24';
+          break;
+        case '11n2y3n':probability13.value = '25.4';
+          break;
+        case '11n2n3n':probability13.value = '24';
+          break;
+        default:probability13.value = '';
+      }
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+  formRef4.value.validate((errors) => {
+    if (!errors) {
+
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+  formRef5.value.validate((errors) => {
+    if (!errors) {
+
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+}
+const handleUpdateValue23 = async () => {
+  formRef3.value.validate((errors) => {
+    if (!errors) {
+      result.value = value.value + formValue2q.value.value1 + formValue2q.value.value2 + formValue2q.value.value3 + formValue2q.value.value4 +formValue2q.value.value5 + formValue2q.value.value6
+      console.log(result.value)
+      switch (result.value) {
+        case '21y2y3y':probability23.value = '44.9';
+          break;
+        case '21y2y3n':probability23.value = '42.1';
+          break;
+        case '21y2n3y':probability23.value = '44.1';
+          break;
+        case '21n2y3y':probability23.value = '34.1';
+          break;
+        case '21y2n3n':probability23.value = '41.2';
+          break;
+        case '21n2n3y':probability23.value = '32.8';
+          break;
+        case '21n2y3n':probability23.value = '30';
+          break;
+        case '21n2n3n':probability23.value = '28.4';
+          break;
+        default:probability23.value = '';
+      }
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+  formRef4.value.validate((errors) => {
+    if (!errors) {
+
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+  formRef5.value.validate((errors) => {
+    if (!errors) {
+
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+}
+const handleUpdateValue33 = async () => {
+  formRef3.value.validate((errors) => {
+    if (!errors) {
+      result.value = value.value + formValue3q.value.value1 + formValue3q.value.value2 + formValue3q.value.value3 + formValue3q.value.value4 +formValue3q.value.value5 + formValue3q.value.value6
+      console.log(result.value)
+      switch (result.value) {
+        case '31y2y3y':probability33.value = '31.8';
+          break;
+        case '31y2y3n':probability33.value = '30.1';
+          break;
+        case '31y2n3y':probability33.value = '30.6';
+          break;
+        case '31n2y3y':probability33.value = '21.7';
+          break;
+        case '31y2n3n':probability33.value = '28.3';
+          break;
+        case '31n2n3y':probability33.value = '21.7';
+          break;
+        case '31n2y3n':probability33.value = '20.9';
+          break;
+        case '31n2n3n':probability33.value = '18.1';
+          break;
+        default:probability33.value = '';
+      }
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+  formRef4.value.validate((errors) => {
+    if (!errors) {
+
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+  formRef5.value.validate((errors) => {
+    if (!errors) {
+
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+}
+const handleUpdateValue43 = async () => {
+  formRef3.value.validate((errors) => {
+    if (!errors) {
+      result.value = value.value + formValue4q.value.value1 + formValue4q.value.value2 + formValue4q.value.value3 + formValue4q.value.value4 +formValue4q.value.value5 + formValue4q.value.value6
+      console.log(result.value)
+      switch (result.value) {
+        case '41y2y3y':probability43.value = '50.1';
+          break;
+        case '41y2y3n':probability43.value = '49';
+          break;
+        case '41y2n3y':probability43.value = '44';
+          break;
+        case '41n2y3y':probability43.value = '46.7';
+          break;
+        case '41y2n3n':probability43.value = '34.9';
+          break;
+        case '41n2n3y':probability43.value = '36.4';
+          break;
+        case '41n2y3n':probability43.value = '45.5';
+          break;
+        case '41n2n3n':probability43.value = '34.9';
+          break;
+        default:probability43.value = '';
+      }
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+  formRef4.value.validate((errors) => {
+    if (!errors) {
+
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+  formRef5.value.validate((errors) => {
+    if (!errors) {
+
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+}
+const handleUpdateValue53 = async () => {
+  formRef3.value.validate((errors) => {
+    if (!errors) {
+      result.value = value.value + formValue5q.value.value1 + formValue5q.value.value2 + formValue5q.value.value3 + formValue5q.value.value4 +formValue5q.value.value5 + formValue5q.value.value6
+      console.log(result.value)
+      switch (result.value) {
+        case '51y2y3y':probability53.value = '39.6';
+          break;
+        case '51y2y3n':probability53.value = '38.1';
+          break;
+        case '51y2n3y':probability53.value = '36.6';
+          break;
+        case '51n2y3y':probability53.value = '32.4';
+          break;
+        case '51y2n3n':probability53.value = '34';
+          break;
+        case '51n2n3y':probability53.value = '28.9';
+          break;
+        case '51n2y3n':probability53.value = '30.7';
+          break;
+        case '51n2n3n':probability53.value = '25.9';
+          break;
+        default:probability53.value = '';
+      }
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+  formRef4.value.validate((errors) => {
+    if (!errors) {
+
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+  formRef5.value.validate((errors) => {
+    if (!errors) {
+
+    } else {
+      console.log(errors)
+      //message.error('请选择选项')
+    }
+  })
+}
 const rules =  {
   value1: {
     required :true,
@@ -1127,6 +1934,38 @@ const rules2 =  {
     message: '请选择节点',
     trigger: ['blur', 'change'],
   }
+}
+const rules3 =  {
+  value1: {
+    required :true,
+    message: '请选择节点',
+    trigger: ['blur', 'change'],
+  },
+  value2: {
+    required: true,
+    message: '请选择状态',
+    trigger: 'change',
+  },
+  value3: {
+    required :true,
+    message: '请选择节点',
+    trigger: ['blur', 'change'],
+  },
+  value4: {
+    required: true,
+    message: '请选择状态',
+    trigger: 'change',
+  },
+  value5: {
+    required :true,
+    message: '请选择节点',
+    trigger: ['blur', 'change'],
+  },
+  value6: {
+    required: true,
+    message: '请选择状态',
+    trigger: 'change',
+  },
 }
 const options1 = [
   {
@@ -1962,6 +2801,96 @@ const options53 = [
     value: 'c53'
   },
 
+]
+const options14 = [
+  {
+    label: '防护用品使用不恰当',
+    value: '1'
+  },
+]
+const options15 = [
+  {
+    label: '样本溢洒、飞溅',
+    value: '2'
+  },
+]
+const options16 = [
+  {
+    label: '隔离措施意外失效',
+    value: '3'
+  },
+]
+const options24 = [
+  {
+    label: '设备未消毒',
+    value: '1'
+  },
+]
+const options25 = [
+  {
+    label: '包装被破坏导致泄露',
+    value: '2'
+  },
+]
+const options26 = [
+  {
+    label: '节肢动物',
+    value: '3'
+  },
+]
+const options34 = [
+  {
+    label: '连接部位渗漏',
+    value: '1'
+  },
+]
+const options35 = [
+  {
+    label: '选择不合适的消毒设备/运行参数',
+    value: '2'
+  },
+]
+const options36 = [
+  {
+    label: '不正确操作',
+    value: '3'
+  },
+]
+const options44 = [
+  {
+    label: 'HEPA安装问题导致周边泄漏',
+    value: '1'
+  },
+]
+const options45 = [
+  {
+    label: '与滤器不相关的其他泄漏',
+    value: '2'
+  },
+]
+const options46 = [
+  {
+    label: '与滤器不相关的其他泄漏',
+    value: '3'
+  },
+]
+const options54 = [
+  {
+    label: '拿错',
+    value: '1'
+  },
+]
+const options55 = [
+  {
+    label: '消毒剂问题',
+    value: '2'
+  },
+]
+const options56 = [
+  {
+    label: '不正确操作',
+    value: '3'
+  },
 ]
 
 const yorns = [
