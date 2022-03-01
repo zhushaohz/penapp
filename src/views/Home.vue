@@ -1,6 +1,6 @@
 <template>
   <div id="page">
-    <div id="titleframe"><n-text type="primary" id="title">生物实验室定量风险评估</n-text></div>
+    <div id="titleframe"><n-text type="primary" id="title">生物安全实验室外环境泄漏定量风险评估</n-text></div>
     <div id="frame">
       <t-row justify="center">
         <router-link to="/riskidentification"><div class="card" hoverable><div class="cardword">风险识别</div></div></router-link>

@@ -42,7 +42,7 @@
                         inline
                         :model="formValue1g"
                         :rules="rules"
-                        ref="formRef"
+                        ref="formRef11"
                         style="padding: 10px"
                       >
                         <n-form-item label="节点" path="value1">
@@ -86,7 +86,7 @@
                         inline
                         :model="formValue1m"
                         :rules="rules2"
-                        ref="formRef2"
+                        ref="formRef12"
                         style="padding: 10px"
                       >
                         <n-form-item label="节点" path="value1">
@@ -129,7 +129,7 @@
                         inline
                         :model="formValue1q"
                         :rules="rules3"
-                        ref="formRef3"
+                        ref="formRef13"
                         style="padding: 10px"
                       >
                         <n-form-item label="节点" path="value1">
@@ -171,7 +171,7 @@
                         :model="formValue1q"
                         :rules="rules3"
                         :show-label="false"
-                        ref="formRef4"
+                        ref="formRef14"
                         style="padding: 10px"
                       >
                         <n-form-item  path="value3">
@@ -203,7 +203,7 @@
                         :model="formValue1q"
                         :rules="rules3"
                         :show-label="false"
-                        ref="formRef5"
+                        ref="formRef15"
                         style="padding: 10px"
                       >
                         <n-form-item path="value5">
@@ -248,7 +248,7 @@
                         inline
                         :model="formValue2g"
                         :rules="rules"
-                        ref="formRef"
+                        ref="formRef21"
                         style="padding: 10px"
                       >
                         <n-form-item label="节点" path="value1">
@@ -288,7 +288,7 @@
                         inline
                         :model="formValue2m"
                         :rules="rules2"
-                        ref="formRef2"
+                        ref="formRef22"
                         style="padding: 10px"
                       >
                         <n-form-item label="节点" path="value1">
@@ -331,7 +331,7 @@
                         inline
                         :model="formValue2q"
                         :rules="rules3"
-                        ref="formRef3"
+                        ref="formRef23"
                         style="padding: 10px"
                       >
                         <n-form-item label="节点" path="value1">
@@ -373,7 +373,7 @@
                         :model="formValue2q"
                         :rules="rules3"
                         :show-label="false"
-                        ref="formRef4"
+                        ref="formRef24"
                         style="padding: 10px"
                       >
                         <n-form-item  path="value3">
@@ -405,7 +405,7 @@
                         :model="formValue2q"
                         :rules="rules3"
                         :show-label="false"
-                        ref="formRef5"
+                        ref="formRef25"
                         style="padding: 10px"
                       >
                         <n-form-item path="value5">
@@ -450,7 +450,7 @@
                         inline
                         :model="formValue3g"
                         :rules="rules"
-                        ref="formRef"
+                        ref="formRef31"
                         style="padding: 10px"
                       >
                         <n-form-item label="节点" path="value1">
@@ -488,7 +488,7 @@
                         inline
                         :model="formValue3m"
                         :rules="rules2"
-                        ref="formRef2"
+                        ref="formRef32"
                         style="padding: 10px"
                       >
                         <n-form-item label="节点" path="value1">
@@ -531,7 +531,7 @@
                         inline
                         :model="formValue3q"
                         :rules="rules3"
-                        ref="formRef3"
+                        ref="formRef33"
                         style="padding: 10px"
                       >
                         <n-form-item label="节点" path="value1">
@@ -573,7 +573,7 @@
                         :model="formValue3q"
                         :rules="rules3"
                         :show-label="false"
-                        ref="formRef4"
+                        ref="formRef34"
                         style="padding: 10px"
                       >
                         <n-form-item  path="value3">
@@ -605,7 +605,7 @@
                         :model="formValue3q"
                         :rules="rules3"
                         :show-label="false"
-                        ref="formRef5"
+                        ref="formRef35"
                         style="padding: 10px"
                       >
                         <n-form-item path="value5">
@@ -650,7 +650,7 @@
                         inline
                         :model="formValue4g"
                         :rules="rules"
-                        ref="formRef"
+                        ref="formRef41"
                         style="padding: 10px"
                       >
                         <n-form-item label="节点" path="value1">
@@ -688,7 +688,7 @@
                         inline
                         :model="formValue4m"
                         :rules="rules2"
-                        ref="formRef2"
+                        ref="formRef42"
                         style="padding: 10px"
                       >
                         <n-form-item label="节点" path="value1">
@@ -731,7 +731,7 @@
                         inline
                         :model="formValue4q"
                         :rules="rules3"
-                        ref="formRef3"
+                        ref="formRef43"
                         style="padding: 10px"
                       >
                         <n-form-item label="节点" path="value1">
@@ -773,7 +773,7 @@
                         :model="formValue4q"
                         :rules="rules3"
                         :show-label="false"
-                        ref="formRef4"
+                        ref="formRef44"
                         style="padding: 10px"
                       >
                         <n-form-item  path="value3">
@@ -805,7 +805,7 @@
                         :model="formValue4q"
                         :rules="rules3"
                         :show-label="false"
-                        ref="formRef5"
+                        ref="formRef45"
                         style="padding: 10px"
                       >
                         <n-form-item path="value5">
@@ -850,7 +850,7 @@
                         inline
                         :model="formValue5g"
                         :rules="rules"
-                        ref="formRef"
+                        ref="formRef51"
                         style="padding: 10px"
                       >
                         <n-form-item label="节点" path="value1">
@@ -888,7 +888,7 @@
                         inline
                         :model="formValue5m"
                         :rules="rules2"
-                        ref="formRef2"
+                        ref="formRef52"
                         style="padding: 10px"
                       >
                         <n-form-item label="节点" path="value1">
@@ -931,7 +931,7 @@
                         inline
                         :model="formValue5q"
                         :rules="rules3"
-                        ref="formRef3"
+                        ref="formRef53"
                         style="padding: 10px"
                       >
                         <n-form-item label="节点" path="value1">
@@ -973,7 +973,7 @@
                         :model="formValue5q"
                         :rules="rules3"
                         :show-label="false"
-                        ref="formRef4"
+                        ref="formRef54"
                         style="padding: 10px"
                       >
                         <n-form-item  path="value3">
@@ -1005,7 +1005,7 @@
                         :model="formValue5q"
                         :rules="rules3"
                         :show-label="false"
-                        ref="formRef5"
+                        ref="formRef55"
                         style="padding: 10px"
                       >
                         <n-form-item path="value5">
@@ -1047,12 +1047,31 @@ import { ref } from 'vue'
 
 const value = ref(1);
 
-const formRef = ref( null)
-
-const formRef2 = ref( null)
-const formRef3 = ref( null)
-const formRef4 = ref( null)
-const formRef5 = ref( null)
+const formRef11 = ref( null)
+const formRef21 = ref( null)
+const formRef31 = ref( null)
+const formRef41 = ref( null)
+const formRef51 = ref( null)
+const formRef12 = ref( null)
+const formRef22 = ref( null)
+const formRef32 = ref( null)
+const formRef42 = ref( null)
+const formRef52 = ref( null)
+const formRef13 = ref( null)
+const formRef23 = ref( null)
+const formRef33 = ref( null)
+const formRef43 = ref( null)
+const formRef53 = ref( null)
+const formRef14 = ref( null)
+const formRef24 = ref( null)
+const formRef34 = ref( null)
+const formRef44 = ref( null)
+const formRef54 = ref( null)
+const formRef15 = ref( null)
+const formRef25 = ref( null)
+const formRef35 = ref( null)
+const formRef45 = ref( null)
+const formRef55 = ref( null)
 
 const formValue1g = ref( {
   value1: null,
@@ -1154,7 +1173,7 @@ const probability33 = ref( null)
 const probability43 = ref( null)
 const probability53 = ref( null)
 const handleUpdateValue1 = async () => {
-  formRef.value.validate((errors) => {
+  formRef11.value.validate((errors) => {
     if (!errors) {
       const { value1, value2} = formValue1g
       //message.success('分析成功')
@@ -1198,7 +1217,7 @@ const handleUpdateValue1 = async () => {
   })
 }
 const handleUpdateValue2 = async () => {
-  formRef.value.validate((errors) => {
+  formRef21.value.validate((errors) => {
     if (!errors) {
       const { value1, value2} = formValue2g
       //message.success('分析成功')
@@ -1234,7 +1253,7 @@ const handleUpdateValue2 = async () => {
   })
 }
 const handleUpdateValue3 = async () => {
-  formRef.value.validate((errors) => {
+  formRef31.value.validate((errors) => {
     if (!errors) {
       const { value1, value2} = formValue3g
       //message.success('分析成功')
@@ -1274,7 +1293,7 @@ const handleUpdateValue3 = async () => {
   })
 }
 const handleUpdateValue4 = async () => {
-  formRef.value.validate((errors) => {
+  formRef41.value.validate((errors) => {
     if (!errors) {
       const { value1, value2} = formValue4g
       //message.success('分析成功')
@@ -1330,7 +1349,7 @@ const handleUpdateValue4 = async () => {
   })
 }
 const handleUpdateValue5 = async () => {
-  formRef.value.validate((errors) => {
+  formRef51.value.validate((errors) => {
     if (!errors) {
       const { value1, value2} = formValue5g
       //message.success('分析成功')
@@ -1362,7 +1381,7 @@ const handleUpdateValue5 = async () => {
   })
 }
 const handleUpdateValue12 = async () => {
-  formRef2.value.validate((errors) => {
+  formRef12.value.validate((errors) => {
     if (!errors) {
       const { value1, value2} = formValue1m
       //message.success('分析成功')
@@ -1418,7 +1437,7 @@ const handleUpdateValue12 = async () => {
   })
 }
 const handleUpdateValue22 = async () => {
-  formRef2.value.validate((errors) => {
+  formRef22.value.validate((errors) => {
     if (!errors) {
       const { value1, value2} = formValue2m
       //message.success('分析成功')
@@ -1504,7 +1523,7 @@ const handleUpdateValue22 = async () => {
   })
 }
 const handleUpdateValue32 = async () => {
-  formRef2.value.validate((errors) => {
+  formRef32.value.validate((errors) => {
     if (!errors) {
       const { value1, value2} = formValue3m
       //message.success('分析成功')
@@ -1574,7 +1593,7 @@ const handleUpdateValue32 = async () => {
   })
 }
 const handleUpdateValue42 = async () => {
-  formRef2.value.validate((errors) => {
+  formRef42.value.validate((errors) => {
     if (!errors) {
       const { value1, value2} = formValue4m
       //message.success('分析成功')
@@ -1626,7 +1645,7 @@ const handleUpdateValue42 = async () => {
   })
 }
 const handleUpdateValue52 = async () => {
-  formRef2.value.validate((errors) => {
+  formRef52.value.validate((errors) => {
     if (!errors) {
       const { value1, value2} = formValue5m
       //message.success('分析成功')
@@ -1682,7 +1701,7 @@ const handleUpdateValue52 = async () => {
   })
 }
 const handleUpdateValue13 = async () => {
-  formRef3.value.validate((errors) => {
+  formRef13.value.validate((errors) => {
     if (!errors) {
       result.value = value.value + formValue1q.value.value1 + formValue1q.value.value2 + formValue1q.value.value3 + formValue1q.value.value4 +formValue1q.value.value5 + formValue1q.value.value6
       console.log(result.value)
@@ -1710,7 +1729,7 @@ const handleUpdateValue13 = async () => {
       //message.error('请选择选项')
     }
   })
-  formRef4.value.validate((errors) => {
+  formRef14.value.validate((errors) => {
     if (!errors) {
 
     } else {
@@ -1718,7 +1737,7 @@ const handleUpdateValue13 = async () => {
       //message.error('请选择选项')
     }
   })
-  formRef5.value.validate((errors) => {
+  formRef15.value.validate((errors) => {
     if (!errors) {
 
     } else {
@@ -1728,7 +1747,7 @@ const handleUpdateValue13 = async () => {
   })
 }
 const handleUpdateValue23 = async () => {
-  formRef3.value.validate((errors) => {
+  formRef23.value.validate((errors) => {
     if (!errors) {
       result.value = value.value + formValue2q.value.value1 + formValue2q.value.value2 + formValue2q.value.value3 + formValue2q.value.value4 +formValue2q.value.value5 + formValue2q.value.value6
       console.log(result.value)
@@ -1756,7 +1775,7 @@ const handleUpdateValue23 = async () => {
       //message.error('请选择选项')
     }
   })
-  formRef4.value.validate((errors) => {
+  formRef24.value.validate((errors) => {
     if (!errors) {
 
     } else {
@@ -1764,7 +1783,7 @@ const handleUpdateValue23 = async () => {
       //message.error('请选择选项')
     }
   })
-  formRef5.value.validate((errors) => {
+  formRef25.value.validate((errors) => {
     if (!errors) {
 
     } else {
@@ -1774,7 +1793,7 @@ const handleUpdateValue23 = async () => {
   })
 }
 const handleUpdateValue33 = async () => {
-  formRef3.value.validate((errors) => {
+  formRef33.value.validate((errors) => {
     if (!errors) {
       result.value = value.value + formValue3q.value.value1 + formValue3q.value.value2 + formValue3q.value.value3 + formValue3q.value.value4 +formValue3q.value.value5 + formValue3q.value.value6
       console.log(result.value)
@@ -1802,7 +1821,7 @@ const handleUpdateValue33 = async () => {
       //message.error('请选择选项')
     }
   })
-  formRef4.value.validate((errors) => {
+  formRef34.value.validate((errors) => {
     if (!errors) {
 
     } else {
@@ -1810,7 +1829,7 @@ const handleUpdateValue33 = async () => {
       //message.error('请选择选项')
     }
   })
-  formRef5.value.validate((errors) => {
+  formRef35.value.validate((errors) => {
     if (!errors) {
 
     } else {
@@ -1820,7 +1839,7 @@ const handleUpdateValue33 = async () => {
   })
 }
 const handleUpdateValue43 = async () => {
-  formRef3.value.validate((errors) => {
+  formRef43.value.validate((errors) => {
     if (!errors) {
       result.value = value.value + formValue4q.value.value1 + formValue4q.value.value2 + formValue4q.value.value3 + formValue4q.value.value4 +formValue4q.value.value5 + formValue4q.value.value6
       console.log(result.value)
@@ -1848,7 +1867,7 @@ const handleUpdateValue43 = async () => {
       //message.error('请选择选项')
     }
   })
-  formRef4.value.validate((errors) => {
+  formRef44.value.validate((errors) => {
     if (!errors) {
 
     } else {
@@ -1856,7 +1875,7 @@ const handleUpdateValue43 = async () => {
       //message.error('请选择选项')
     }
   })
-  formRef5.value.validate((errors) => {
+  formRef45.value.validate((errors) => {
     if (!errors) {
 
     } else {
@@ -1866,7 +1885,7 @@ const handleUpdateValue43 = async () => {
   })
 }
 const handleUpdateValue53 = async () => {
-  formRef3.value.validate((errors) => {
+  formRef53.value.validate((errors) => {
     if (!errors) {
       result.value = value.value + formValue5q.value.value1 + formValue5q.value.value2 + formValue5q.value.value3 + formValue5q.value.value4 +formValue5q.value.value5 + formValue5q.value.value6
       console.log(result.value)
@@ -1894,7 +1913,7 @@ const handleUpdateValue53 = async () => {
       //message.error('请选择选项')
     }
   })
-  formRef4.value.validate((errors) => {
+  formRef54.value.validate((errors) => {
     if (!errors) {
 
     } else {
@@ -1902,7 +1921,7 @@ const handleUpdateValue53 = async () => {
       //message.error('请选择选项')
     }
   })
-  formRef5.value.validate((errors) => {
+  formRef55.value.validate((errors) => {
     if (!errors) {
 
     } else {
