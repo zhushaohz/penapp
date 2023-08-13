@@ -49,7 +49,7 @@ export default {
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
   border-radius: 5px;
-  background: rgba(0, 0, 0, 0.3x);
+  background: rgba(0, 0, 0, 0.3);
   transition: color 0.2s ease;
 }
 </style>

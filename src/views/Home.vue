@@ -1,6 +1,6 @@
 <template>
   <div id="page">
-    <div id="titleframe"><n-text type="primary" id="title">生物安全实验室外环境泄漏定量风险评估</n-text></div>
+    <div id="titleframe"><n-text type="primary" id="title">生物实验室人因量化风险评估系统</n-text></div>
     <div id="frame">
       <t-row justify="center">
         <router-link to="/riskidentification"><div class="card" hoverable><div class="cardword">风险识别</div></div></router-link>
@@ -37,12 +37,14 @@ export default {
   padding-top: 1rem;
   border: solid 0px #000;
   height: 100vh;
-  background-image: url("https://zhz-1257270135.cos.ap-beijing.myqcloud.com/pen/bg.jpg");
+  background-image: url("https://zhz-1257270135.cos.ap-beijing.myqcloud.com/ren/bg2.jpg");
   background-size: cover;
+  opacity: 0.9;
+  user-select: none;
 }
 #titleframe{
   margin-top: 9rem;
-  margin-bottom: 9rem;
+  margin-bottom: 12rem;
   border: solid 0px #000000;
   text-align: center;
 }
@@ -53,18 +55,23 @@ export default {
 }
 #title{
   font-size: 5rem;
+  font-weight: 600;
+  font-family: Microsoft YaHei;
   color: black;
+  -webkit-text-stroke: 0px white;
+  text-shadow: 20px 15px 25px #ffffff, -20px -15px 25px #ffffff;
+
 }
 .card{
-  margin-left: 4vh;
-  margin-right: 4vh;
-  height: 6rem;
-  width: 12rem;
+  margin-left: 8vh;
+  margin-right: 8vh;
+  height: 8rem;
+  width: 20rem;
   border: solid 0px #000000;
-  border-radius: 1.5rem;
+  border-radius: 8rem;
   background-color: #5DA0E7;
-  box-shadow: 20px -20px 30px #1a61ad, -20px 20px 30px #99c3f0;
-  opacity: 0.6;
+  box-shadow: 10px -10px 30px #1a61ad, -10px 10px 30px #99c3f0;
+  opacity: 1;
   color: black;
 }
 .card:after{
@@ -72,9 +79,9 @@ export default {
 }
 .cardword{
   border: solid 0px #000000;
-  height: 6rem;
-  line-height: 6rem;
-  font-size: 2rem;
+  height: 8rem;
+  line-height: 8rem;
+  font-size: 3rem;
   font-family: NotoSansSC;
 }
 a:link{

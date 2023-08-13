@@ -4,7 +4,7 @@
       <t-header height="30%">
         <t-head-menu value="item1" height="150px" style="border-bottom: 1px solid var(--td-gray-color-3)">
           <template #logo>
-            <img width="240" class="logo" src="https://zhz-1257270135.cos.ap-beijing.myqcloud.com/pen/logo3.png" alt="logo" />
+            <img width="240" class="logo" src="https://zhz-1257270135.cos.ap-beijing.myqcloud.com/pen/logo4.png" alt="logo" />
           </template>
           <t-menu-item value="item1"> 风险识别 </t-menu-item>
           <t-menu-item value="item2" to="/riskanalysis"> 风险分析 </t-menu-item>
@@ -29,7 +29,7 @@
               <template #icon>
                 <t-icon name="view-module" />
               </template>
-              案例调研
+              数据分析
             </t-menu-item>
             <t-menu-item value="risklist" to="/riskidentification/risklist">
               <template #icon>
